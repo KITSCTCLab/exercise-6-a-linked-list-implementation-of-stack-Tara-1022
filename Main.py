@@ -17,7 +17,7 @@ class Stack:
       self.head = new
 
   def pop(self) -> None:
-    if self.head is not None:
+    if not self.head is None:
       self.head = self.head.next
 
   def status(self):
@@ -29,7 +29,7 @@ class Stack:
     while curr is not None:
       elements += str(curr.data) + "=>"
       curr = curr.next
-    return elements + "None"
+    print(elements + "None")
 
 
 # Do not change the following code
