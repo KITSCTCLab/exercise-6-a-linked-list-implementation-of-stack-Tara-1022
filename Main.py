@@ -10,11 +10,8 @@ class Stack:
 
   def push(self, data) -> None:
     new = Node(data)
-    if self.head is None:
-      self.head = new
-    else:
-      new.next = self.head
-      self.head = new
+    new.next = self.head
+    self.head = new
 
   def pop(self) -> None:
     if not self.head is None:
