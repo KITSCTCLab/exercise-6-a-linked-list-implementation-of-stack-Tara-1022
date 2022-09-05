@@ -13,7 +13,7 @@ class Stack:
     if self.head is None:
       self.head = new
     else:
-      new.next = self.head.next
+      new.next = self.head
       self.head = new
 
   def pop(self) -> None:
